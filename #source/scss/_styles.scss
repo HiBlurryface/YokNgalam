@@ -1,0 +1,42 @@
+@font-face {
+	font-family: 'ChunkFive';
+	src: url('../fonts/ChunkFive Ex Regular.eot');
+	src: local('☺'), url('../fonts/ChunkFive Ex Regular.woff') format('woff'), url('../fonts/ChunkFive Ex Regular.ttf') format('truetype'), url('../fonts/ChunkFive Ex Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+$Chunk: 'ChunkFive';
+$Lato: 'Lato', sans-serif;
+$Mont: 'Montserrat', sans-serif;
+%title {
+    font-weight: 100;
+    font-family: $Chunk;
+    font-size: 67px;
+    color: #29d9c2;
+    padding-bottom: 40px;
+    & span {
+        color: #01a2a6;
+    }
+    @media (max-width: 768px) {
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+}
+%subtitle {
+    font-family: $Lato;
+    font-size: 16px;
+    color: #777777;
+    line-height: 35px;
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+.wrapper {
+    overflow: hidden;
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1220px;
+    margin: 0px auto;
+    padding: 0 25px;
+}
